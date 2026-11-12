@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>随机正整数生成器</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>随机正整数生成器</h1>
+
+      <form id="generator-form" novalidate>
+        <label for="count">N（数量）</label>
+        <input id="count" name="count" type="number" inputmode="numeric" min="1" step="1" required />
+
+        <label for="maximum">X（上限）</label>
+        <input id="maximum" name="maximum" type="number" inputmode="numeric" min="1" step="1" required />
+
+        <button type="submit">生成</button>
+      </form>
+
+      <p id="message" role="alert" aria-live="polite"></p>
+      <output id="result" aria-live="polite"></output>
+    </main>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
